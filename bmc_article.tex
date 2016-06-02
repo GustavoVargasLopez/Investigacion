@@ -1,0 +1,516 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Investigación}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Redes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   noteref={n1},                        % id's of article notes, if any
+   email={vlgustavo368@gmail.com}   % email address
+]{\inits{JE}\fnm{Gustavo Vargas Lopez} \snm{}}
+%\author[
+ %  addressref={aff1,aff2},
+  % email={john.RS.Smith@cambridge.co.uk}
+%]{\inits{JRS}\fnm{John RS} \snm{Smith}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Instituto Tecnológico de Tijuana, Departamento de sistemas}, % university, etc
+  \street{CALZADA TECNOLOGICO SN,TOMAS AQUINO, Tomas Aquino,22414 },                     %
+  %\postcode{}                                % post or zip code
+  \city{Tijuana},                              % city
+  \cny{Mexico}                                    % country
+}
+\address[id=aff2]{%
+  \orgname{},
+  \street{},
+  \postcode{}
+  \city{},
+  \cny{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\begin{abstract} % abstract
+\parttitle{Título primera parte} %if any
+Redes.
+
+\parttitle{Segunda parte del título} %if any
+Ámbito Global.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{Redes}
+\kwd{Informáticas}
+\kwd{Topologias}
+\kwd{Internet}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+\section*{Resumen}
+Se habla un poco de las redes que son y sus diferentes clasificaciones que en la investigación por lo menos tenemos 5 clasificaciones y sus correspondientes definiciones.
+También habla sobre las redes por grado de autentificacion,por servicio y función y por grado de difusión.
+A la vez se habla de las topologias de red y sus ventajas y desventajas para dar una idea de todo lo que conforma las redes informáticas y también se menciona un poco sobre lo que es el internet.   
+\section*{Introducción}
+
+En esta investigación vamos a poder comprende de una manera diferente las redes informáticas para que de una forma practica y sencilla puedas conocer exactamente que es una red informática, y para que sirve, tiene muchas utilidades también con el simple echo de hablar redes te da una idea de lo que es pero en la investigación se te explicara de una manera detallada lo que son y a la vez sus diferentes clasificaciones, para que al saber de todo puedas lograr el tener una buena red en tu negocio o no necesariamente en el negocio si no en la casa, esto es muy practico para todos ya que al tener este tipo de conexiones puede facilitar el uso de la información en el hogar o negocio, por lo cual la investigación trata de abrirte un poco las puertas hacia la tecnología, existen muchas empresas en donde dieron un fuerte progreso en sus actividades gracias al tipo de redes informáticas con las que cuentan ya que les facilita el mandar y recibir información desde cualquier punto del mundo por lo cual las empresas se pueden volver comerciantes a nivel mundial y pueden compartir información con otro tipo de negocios y no necesariamente tiene que ser una empresas lucrativas también para fundaciones,orfanatos etc. Les puede venir bien el estar familiarizado con las redes, las redes informáticas viene revolucionando la comunicación global mente ya que pueden compartir culturas, y de una forma segura y rápida por lo cual es una muy buena opción el invertir en este tipo de cosas ya que a largo plazo las cosas saldrán bien y todo últimamente se basa en la tecnología por lo cual hoy en día la tecnología es indispensable para todas las personas y viendo las cosas de aquí a 50 años sera aun mas necesaria la tecnología por eso mismo es bueno desde ahorita el ir adaptándote al futuro. 
+ %\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
+\section*{Justificación}
+El propósito de la investigación es dar a conocer las muy útiles formas de aplicar las redes informáticas en diferentes campos profesionales por lo cual se realiza una investigación para que las personas puedan entender que tan necesario es el estar actualizado en cuanto a las tecnologias que van saliendo y aplicarlas ya que son una forma eficiente el estar implementando todo lo que se aprende y para el hogar o ya sea el negocio.
+Básicamente lo que trato de explicar es que las redes informáticas son una buena inversión para el negocio o ya sea el hogar para poder estar conectado con el mundo, ya que a como esta el presente todo se maneja por medio de redes y sin ellas es como si no existieras de alguna manera.
+Por lo cual en la investigación se habla de las clasificaciones que tienen las redes y todo esto para que puedan comprender y adaptar las redes de acuerdo con sus necesidades y así de una manera optima no tengan que gastar tanto en cosas que no necesitan.
+Las redes informáticas son muy importantes para el mundo, esta nueva era es de la tecnología y así sera por mucho tiempo por eso me día a la tarea de investigación sobre este tema para poder compartir lo que busque y que las personas puedan saber mas sobre esto ya que muchas de ellas no tiene idea de como funciona la tecnología y mucho de ellos tiene empresas y para que puedan seguir progresando deben estar actualizados en todo y esto favorece a todos ya que si en un país las empresas aumenta su capital eso quiere decir que son mas ingresos para nosotros y nos daría una mejor calidad de vida. Esto en pocas palabras quiere decir que entre mas progrese el país en cuanto a tecnológica nos vendrá bien para tener mayores ingresos y a seguir invirtiendo.
+\section*{Objetivos Generales}
+Los objetivos a grandes rasgos quiere decir que busca dar a conocer las redes informáticas de una manera amplia para todas las personas y que tengan el conocimiento y con eso tener las ganas de progresar en sus empresas y obtengan mayores ingresos para ellos y para nosotros por que entre mas rico sea el país a todos les ira bien o al menos así debería de ser.
+\section*{Objetivos Específicos}
+Como objetivos específicos quiero lograr con esta investigación comprender todo lo que se relaciona con las redes informáticas ya que son una gran herramienta en estos tiempos.
+Ya que a futuro quiero tener mi propia empresa y esto me ayudara a poder sacarle provecho al máximo, estar comunicado con el mundo entero y tener mi información al alcance. 
+\section*{Redes}
+Empezaremos hablando sobre lo que es una red informática, por lo cual la referencia que tenemos nos dice que "Una red Informática es básicamente un conjunto de equipos conectado entre si, que envían y reciben impulsos eléctricos,ondas electromagnéticas o similares con el fin de transportar datos"[1]. En otras palabras menos profesionales quiere decir el enviar y recibir información de un lugar cualquiera a otro y de una manera rápida y eficiente esto nos ayuda a poder comunicarnos de una manera rápida y segura. Básicamente la utilidad de las redes informáticas es poder mandar información y recibirla desde cualquier parte del mundo en donde tengan Internet obviamente pero para que quede mas claro esta referencia dice que "la utilidad de la red es compartir información y recursos a distancia, procurar que dicha información sea segura, este siempre disponible, y por supuesto, de forma cada vez mas rápida y económica"[1]. Una vez explicado lo que son redes informáticas veremos de una manera rápida y sencilla sus clasificaciones "Una red informática tiene distintos tipos de clasificación dependiendo de su estructura o forma de transmisión, entro los principales tipos de redes están lo siguientes :
+\subsection*{1-Redes por Alcance}
+Este tipo de red se nombra con siglas se su área de cobertura: una red de área personal o PAN( Personal Área Network) es usada para la comunicación entre dispositivos cerca de una persona ; una Lan (Local Área Network), corresponde a una red de área local que cubre una zona pequeña con varios usuarios, como un edificio u oficina.  
+\subsection*{2.-Redes por tipo de Conexión}
+Cuando hablamos de redes por tipo de conexión, el tipo de red varia dependiendo si la transmisión de datos se realiza por medios guiados como cable coaxial, por trenzado o fibra óptica, o medios no guiados, como las ondas de radio, infrarrojos, microondas u otras transmisiones por aire. 
+\subsection*{3.-Redes por Relación Funcional}
+Cuando un cliente o usuario solicita la información a un servidor que le da respuesta es una Relación Cliente/Servidor, en cambio cuando en dicha conexión una serie de nodos operan como iguales entre sí, sin cliente ni servidores, hablamos de Conexiones Peer to Peer o P2P.
+\subsection*{4.-Redes por Topologia}
+La Topología de una red, establece su clasificación en base a la estructura de unión de los distintos nodos o terminales conectados. En esta clasificación encontramos las redes en bus, anillo, estrella, en malla, en árbol y redes mixtas.
+\subsection*{5.-Redes por Direccional}
+En la direccionalidad de los datos, cuando un equipo actúa como emisor en forma unidireccional se llama Simplex, si la información es bidireccional  pero solo un equipo transmite a la vez, es una red Half-Duplex  o Semi-Duplex, y si ambos equipos envían y reciben información  simultáneamente hablamos de una red Full Duplex.
+\subsection*{Redes por grado de Autentificación}
+Las Redes Privadas y la Red de Acceso Público, son 2 tipos de redes clasificadas según el grado de autentificación necesario para conectarse a ella. De este modo una red privada requiere el ingreso de claves u otro medio de validación de usuarios, una red de acceso público en cambio, permite que dichos usuarios accedan a ella libremente.
+\subsection*{Redes por grado de Difusión}
+Otra clasificación similar a la red por grado de autentificación, corresponde a la red por Grado de Difusión, pudiendo ser Intranet o Internet. Una intranet, es un conjunto de equipos que comparte información entre usuarios validados previamente, Internet  en cambio, es una red de alcance mundial gracias a que la interconexión de equipos funcionan como una red lógica única, con lenguajes y protocolos de dominio abierto y heterogéneo.
+\subsection*{Redes por Servicio y Función}
+Por último, según Servicio o Función de las Redes, se pueden clasificar como Redes Comerciales, Educativas o Redes para el Proceso de Datos.
+"[1]. En esta referencia nos esta dando a conocer sobre las diferentes clasificaciones que tiene las redes informáticas, todo esto tiene un propósito en la investigación por ellos es necesario que conozcan sus diferentes clasificaciones para que de alguna manera puedan formar su propia red con esta información ya sea para un grupo de trabajo pequeño o grande.
+
+\section*{Ámbito Global}
+Una vez explicado de manera sencilla lo que son las redes informáticas vamos a ver de una manera mas aplicada a diferentes profesiones, con el fin de que vean de que manera tan eficiente puede llegar a ser la redes informáticas y así que logren de una manera optima su red por lo cual investigue de diferentes artículos como es que aplicaron sus redes en diferentes campos.
+El siguiente articulo habla sobre las redes de computadoras al servicio de la bibliotecología medica:INFOMED. Pero antes de llegar al articulo vamos a ver lo que es:
+"Infomed es el nombre que identifica a la red de personas e instituciones que trabajan y colaboran para facilitar el acceso a la información y el conocimiento, necesarios para mejorar la salud de los cubanos y de los pueblos del mundo. Surgió en el año 1992, como un proyecto del "Centro Nacional de Información de Ciencias Médicas", en áreas de dar respuesta a la necesidad de facilitar el intercambio de información entre los profesionales, académicos, investigadores, estudiantes y directivos del Sistema Nacional de Salud cubano; convirtiéndose este en su principal objetivo."[3].Básicamente a eso se dedica infomed y para poder lograr sus objetivos tuvo que adaptarse a las nuevas tecnologias por lo cual tenemos este articulo. 
+"Para el desarrollo de INFOMED ha resultado de especial utilidad la experiencia de las denominadas redes académicas, cuyo exponente más acaba do es la red INTERNET. En el momento de buscar una estrategia para enfrentar la tarea antes descrita, existía suficiente consenso internacional sobre las ventajas y desventajas de esta experiencia para tratar de desarrollar una red nacional que contribuyera a una mejoría del acceso de los usuarios a los recursos de información, así como para el desarrollo particular de los servicios bibliotecarios.
+INTERNET es el nombre con el que se conoce a la mayor red de computadoras existente en la actualidad, la cual usa el conjunto de protocolos TCP/IP para operar e interconectar en línea a miles de redes y millones de usuarios en todo el mundo. Es una red de alcance universal, pero su espina dorsal está ubicada en los Estados Unidos de América.
+
+Originalmente fue concebida para compartir recursos costosos de computación entre la comunidad científica y militar norteamericana, pero como resultado de su enorme crecimiento, sirve hoy día a educadores, trabajadores de la información, políticos, etcétera, para las más diversas aplicaciones.
+
+INTERNET es esencialmente un importante medio de comunicación y de acceso a la información, a través de cuyas conexiones con otras redes tiene el más universal alcance en cuanto a correo electrónico se refiere.
+Un aspecto muy importante de INTERNET es que en realidad se trata de una red de redes. Si bien su espina dorsal la constituye la Red de la Fundación Nacional de Ciencia de los Estados Unidos, hoy día son parte de INTERNET un conjunto de redes interconectadas entre sí que le permiten a los usuarios utilizar sus servicios como si se tratara de una única red en términos lógicos.
+
+Hay que hacer una distinción entre lo que es propiamente INTERNET y lo que significa tener comunicación con ella. Lo primero supone disponer de una conexión permanente a un nodo de la red y tener asignada una identificación como parte de ella, para poder utilizar un conjunto de sus servicios en línea. Lo segundo se refiere principal mente a intercambiar mensajería electrónica con la misma.
+
+Los servicios básicos de INTERNET son tres:
+\subsection*{1.-Login}
+El denominado login remoto, que permite conectarse a un servidor (una computadora central) en cual quier punto de la red, siempre que se tenga acceso a éste.
+\subsection*{2.-Ficheros}
+La transferencia de ficheros (información) entre las máquinas conecta das a la red, conocida como FTP (file transfer protocol).
+\subsection*{3.-Mensajería}
+La mensajería electrónica, que posibilita el envío y recepción de mensajes electrónicos entre usuarios de la red, así como con usuarios de otras redes que se conectan a INTERNET. Este es el servicio más extendido universalmente y que más se ha utilizado en Cuba, por no exigir estar directamente conectado a INTERNET para poder acceder a él.
+Sobre la base de los servicios anteriores, existe un universo de aplicaciones y recursos de información, que están en permanente expansión, y cuyos límites están dictados casi exclusivamente por los límites de la creatividad humana. 
+"[2].
+Esto solo es una parte del articulo pero como podrán entender las redes como ya lo he mencionado son muy importantes, en el articulo se maneja la palabra Internet en el cual se hace referencia lo importante que es y como fue utilizado para poder desarrollarse en su empresa, el Internet es una herramienta que te permite tener acceso de todo tipo de información ya sea buena o mala de nosotros depende de como la utilizamos, prácticamente es la herramienta principal para todas las personas y eso es una prueba de que las redes informáticas son esenciales para todo el mundo en el día de hoy.
+También tenemos los correos electrónicos que hoy en día todo el mundo los utiliza veremos un poco de lo que son.
+
+"De todos los servicios antes descritos, el más utilizado y de mayor alcance es la mensajería electrónica o correo electrónico, que enlaza de modo rápido, sencillo y económico a los usuarios entre sí y ofrece numerosas oportunidades de servicio. Generalmente ésta es una primera etapa en el desarrollo de las redes, por lo que constituye una pieza fundamental en la evolución de la red INFOMED, sobre todo, porque hasta el momento Cuba no contaba con enlace directo a INTERNET.
+A partir de esta experiencia, se ha trabajado a nivel nacional en una estrategia que combina el uso del TCP/IP para conectar las redes de mayor desarrollo relativo y que cuenten con facilidades de comunicación para ello, y UUCP para el resto de las redes, lo que ha condicionado el desarrollo de servicios ajustados a estas características"[2]. Bueno básicamente la mensajería electrónica es primordial para las empresas y para el mundo es una manera practica de comunicarse con las demás personas de manera mas laborar. Para una empresa que se quiere implementar existen diferentes maneras de tener conectadas las computadoras ya sea según tu necesidad, estas conexiones son muy practicas para la empresa y por lo cual son importantes tenerlas en cuenta por lo tanto se les mostrara en la investigación los diferentes tipos de topo logias.
+\section*{TOPOLOGIAS}
+Empezaremos definiendo lo que es la topologia para que tengan una idea concreta de lo que es: "La topología de red se define como la cadena de comunicación usada por los nodos que
+conforman una red para comunicarse. Un ejemplo claro de esto es la topología de árbol, la cual es
+llamada así por su apariencia estética, por la cual puede comenzar con la inserción del servicio de
+internet desde el proveedor, pasando por el router, luego por un switch y este deriva a otro switch
+u otro router o sencillamente a los hosts (estaciones de trabajo), el resultado de esto es una red
+con apariencia de árbol porque desde el primer router que se tiene se ramifica la distribución de
+internet dando lugar a la creación de nuevas redes o subredes tanto internas como externas."[4]
+En si las topologias son una forma de conectar computadoras de manera eficiente para que la empresa o no necesariamente una empresa si no una casa que cuente con varias computadoras, esto se hace con el fin de tener eficiencia y que el manejo de informacion sea mas rápido para todos. Una vez entendido esto se mostrara las tipos de topologias no serán todos pero si los mas importantes.
+\subsection*{Árbol} 
+"Topología de red en la que los nodos están colocados en forma de árbol. Desde una visión
+topológica, la conexión en árbol es parecida a una serie de redes en estrella interconectadas salvo
+en que no tiene un nodo central. En cambio, tiene un nodo de enlace troncal, generalmente
+ocupado por un hub o switch, desde el que se ramifican los demás nodos. Es una variación de la
+red en bus, la falla de un nodo no implica interrupción en las comunicaciones. Se comparte el
+mismo canal de comunicaciones.
+\subsection*{Ventajas}
+
+* El Hub central al retransmitir las señales amplifica la potencia e incrementa la distancia a la
+que puede viajar la señal.
+* Se permite conectar más dispositivos gracias a la inclusión de concentradores secundarios.
+* Permite priorizar y aislar las comunicaciones de distintas computadoras.
+* Cableado punto a punto para segmentos individuales.
+* Soportado por multitud de vendedores de software y de hardware.
+\subsection*{Desventajas}
+
+* Se requiere mucho cable.
+* La medida de cada segmento viene determinada por el tipo de cable utilizado.
+* Si se viene abajo el segmento principal todo el segmento se viene abajo con él.
+* Es más difícil su configuración.
+"[4]
+\subsection*{Bus} 
+"Esta topología permite que todas las estaciones reciban la información que se transmite, una
+estación transmite y todas las restantes escuchan. Consiste en un cable con un terminador en cada
+extremo del que se cuelgan todos los elementos de una red. Todos los nodos de la red están
+unidos a este cable: el cual recibe el nombre de “Backbone Cable”. Tanto Ethernet como Local Talk
+pueden utilizar esta topología.
+\subsection*{Ventajas}
+ * Facilidad de implementación y crecimiento.
+ * Simplicidad en la arquitectura.
+\subsection*{Desventajas}
+  * Hay un límite de equipos dependiendo de la calidad de la señal.
+  * Puede producirse degradación de la señal.
+  * Complejidad de re configuración y aislamiento de fallos.
+  * Limitación de las longitudes físicas del canal.
+  * Un problema en el canal usualmente degrada toda la red.
+  * El desempeño se disminuye a medida que la red crece.
+  * El canal requiere ser correctamente cerrado (caminos cerrados).
+  * Altas pérdidas en la transmisión debido a colisiones entre mensajes.
+  * Es una red que ocupa mucho espacio.
+"[4]
+\subsection*{Anillo}
+"Topología de red en la que cada estación está conectada a la siguiente y la última está conectada a
+la primera. Cada estación tiene un receptor y un transmisor que hace la función de repetidor,
+pasando la señal a la siguiente estación.
+En este tipo de red la comunicación se da por el paso de un token o testigo, que se puede
+conceptualizar como un cartero que pasa recogiendo y entregando paquetes de información, de
+esta manera se evitan eventuales pérdidas de información debidas a colisiones.
+\subsection*{Ventajas}
+    * Simplicidad de arquitectura.
+    * Facilidad de configuración.
+    * Facilidad de fluidez de datos
+\subsection*{Desventajas}
+    * Longitudes de canales limitadas.
+    * El canal usualmente se degradará a medida que la red crece.
+    * Lentitud en la transferencia de datos
+"[4]
+\subsection*{Estrella} 
+"Una red en estrella es una red en la cual las estaciones están conectadas directamente a un punto
+central y todas las comunicaciones se han de hacer necesariamente a través de éste.
+Dado su transmisión, una red en estrella activa tiene un nodo central activo que normalmente
+tiene los medios para prevenir problemas relacionados con el eco.
+\subsection*{Ventajas}
+   * Tiene los medios para prevenir problemas.
+   * Si una PC se desconecta o se rompe el cable solo queda fuera de la red esa PC.
+   * Fácil de agregar, reconfigurar arquitectura PC.
+   * Fácil de prevenir daños o conflictos.
+   * Permite que todos los nodos se comuniquen entre sí de manera conveniente.
+   * El mantenimiento resulta más económico y fácil que la topología
+\subsection*{Desventajas}
+ * Si el nodo central falla, toda la red se desconecta.
+ * Es costosa, ya que requiere más cable que las topologías bus o anillo.
+ * El cable viaja por separado del hub a cada computadora.
+"[4]  
+\subsection*{Malla} 
+"La topología en malla es una topología de red  en la que cada nodo está conectado a todos los
+nodos. De esta manera es posible llevar los mensajes de un nodo a otro por diferentes caminos. Si
+la red de malla está completamente conectada, no puede existir absolutamente ninguna
+interrupción en las comunicaciones. Cada servidor tiene sus propias conexiones con todos los
+demás servidores.
+\subsection*{Ventajas}
+ * Es posible llevar los mensajes de un nodo a otro por diferentes caminos.
+ * No puede existir absolutamente ninguna interrupción en las comunicaciones.
+ * Cada servidor tiene sus propias comunicaciones con todos los demás servidores.
+ * Si falla un cable el otro se hará cargo del trafico.
+ * No requiere un nodo o servidor central lo que reduce el mantenimiento.
+ * Si un nodo desaparece o falla no afecta en absoluto a los demás nodos.
+\subsection*{Desventajas}
+ * Esta red es costosa de instalar ya que requiere de mucho cable.
+"[4]\\
+\\Básicamente estas son todas las topologias importantes por lo cual es una manera sencilla ver cual es la que se adapta las necesidades de las personas, lo bueno de esto que todas se pueden conectar para tener una red mixta que esa entraría en una red pero no tiene caso por que seria todas redes conectadas entre si o no todos pero ya con conectar dos redes ya seria una red mixta por lo cual es muy interesante saber todo esto. 
+       
+
+   
+\section*{Conclusiones}
+La manera en como va avanzando el mundo es impresionante por lo cual todas las personas no deben quedarse atrás en cuanto a tecnología se refiere por que es una manera horrible de no entender lo que paso a tu alrededor, por esto mismo se explica un poco lo que son las redes informáticas para las demás personas por si algún día se quisieran implementar todo esto, para mi es un manera de ayudar a las personas a avanzar en todo esto y no dejarlas en el olvido ya que entre mas sepa el mundo mas avanza. La redes informáticas son la base de la comunicación para el mundo por lo cual todo el mundo debe estar familiarizado con todo esto para no perder la comunicación.     
+\section*{Trabajo a futuro}
+Todo esto se esta implementado en el día de hoy por lo cual no tendría mucho a a futuro,pero de alguna manera con toda esta investigación se le pueden dar a las bases a diferentes empresas para que se actualicen y generen ingresos paro ellos mismo y el lugar donde tengan su empresa. En pocas palabras aumentar la economía de todos.   
+%\nocite{oreg,schn,pond,smith,marg,hunn,advi,koha,mouse}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{REFERENCIAS}
+\begin{enumerate}
+	\item https://gobiernoti.wordpress.com/2011/10/04/tipos-de-redes-informaticas/
+	
+	\item http://scielo.sld.cu/scielo.php?pid=S1024-94351995000100002\&script=sci\_arttext\&tlng=es/
+	
+	\item http://www.sld.cu/acerca-de
+	
+	\item http://ual.dyndns.org/Biblioteca/Redes/Pdf/Unidad\%2003.pdf 
+	
+	\item  http://scielo.sld.cu/scielo.php?pid=S1024-94352010000300006\&script=sci\_arttext 
+
+	\item http://estudiantes.iems.edu.mx/cired/html/articulos/politicainformactica/topologias.html
+	
+	\item 
+	http://www.internetsociety.org/es/breve-historia-de-internet
+	 
+	\item http://www.uaeh.edu.mx/docencia/P\_Presentaciones/prepa3/Presentaciones\_Enero\_Junio\_2014/Definicion\%20de\%20Internet.pdf
+	
+	\item http://www.tecnocosas.es/el-correo-electronico-origen-y-funcionamiento/
+	
+	\item http://culturizando.com/el-origen-de-un-invento-el-correo/
+\end{enumerate}
+
+
+% if your bibliography is in bibtex format, use those commands:
+%\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+%\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}/
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Tables                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Use of \listoftables is discouraged.
+%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Additional Files              %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{backmatter}
+\end{document}
